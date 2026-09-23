@@ -1,0 +1,63 @@
+Original text:
+Natural Language Processing (NLP) is a subfield of linguistics, computer science, and artificial intelligence concerned with the interactions between computers and human language. It's used to analyze text, allowing machines to understand, interpret, and manipulate human language. NLP has many real-world applications, including machine translation, sentiment analysis, and chatbots.
+
+1. Tokens after tokenization (49):
+['Natural', 'Language', 'Processing', '(NLP)', 'is', 'a', 'subfield', 'of', 'linguistics,', 'computer', 'science,', 'and', 'artificial', 'intelligence', 'concerned', 'with', 'the', 'interactions', 'between', 'computers', 'and', 'human', 'language.', "It's", 'used', 'to', 'analyze', 'text,', 'allowing', 'machines', 'to', 'understand,', 'interpret,', 'and', 'manipulate', 'human', 'language.', 'NLP', 'has', 'many', 'real-world', 'applications,', 'including', 'machine', 'translation,', 'sentiment', 'analysis,', 'and', 'chatbots.']
+
+2. Tokens after lowercasing and punctuation removal (49):
+['natural', 'language', 'processing', 'nlp', 'is', 'a', 'subfield', 'of', 'linguistics', 'computer', 'science', 'and', 'artificial', 'intelligence', 'concerned', 'with', 'the', 'interactions', 'between', 'computers', 'and', 'human', 'language', 'its', 'used', 'to', 'analyze', 'text', 'allowing', 'machines', 'to', 'understand', 'interpret', 'and', 'manipulate', 'human', 'language', 'nlp', 'has', 'many', 'realworld', 'applications', 'including', 'machine', 'translation', 'sentiment', 'analysis', 'and', 'chatbots']
+
+3. Tokens after stop word removal (36):
+['natural', 'language', 'processing', 'nlp', 'subfield', 'linguistics', 'computer', 'science', 'artificial', 'intelligence', 'concerned', 'interactions', 'between', 'computers', 'human', 'language', 'used', 'analyze', 'text', 'allowing', 'machines', 'understand', 'interpret', 'manipulate', 'human', 'language', 'nlp', 'many', 'realworld', 'applications', 'including', 'machine', 'translation', 'sentiment', 'analysis', 'chatbots']
+
+4. Tokens after stemming (36):
+['natural', 'language', 'process', 'nlp', 'subfield', 'linguistic', 'computer', 'science', 'artificial', 'intelligence', 'concern', 'interact', 'between', 'computer', 'human', 'language', 'used', 'analyze', 'text', 'allow', 'machine', 'understand', 'interpret', 'manipulate', 'human', 'language', 'nlp', 'many', 'realworld', 'applic', 'includ', 'machine', 'transl', 'sentiment', 'analysis', 'chatbot']
+
+Bonus. Tokens after lemmatization (36):
+['natural', 'language', 'process', 'nlp', 'subfield', 'linguistics', 'computer', 'science', 'artificial', 'intelligence', 'concern', 'interaction', 'between', 'computer', 'human', 'language', 'use', 'analyze', 'text', 'allow', 'machine', 'understand', 'interpret', 'manipulate', 'human', 'language', 'nlp', 'many', 'realworld', 'application', 'include', 'machine', 'translation', 'sentiment', 'analysis', 'chatbot']
+
+Bonus. Stemming vs. lemmatization:
+token          stem           lemma          
+---------------------------------------------
+natural        natural        natural        
+language       language       language       
+processing     process        process        
+nlp            nlp            nlp            
+subfield       subfield       subfield       
+linguistics    linguistic     linguistics    
+computer       computer       computer       
+science        science        science        
+artificial     artificial     artificial     
+intelligence   intelligence   intelligence   
+concerned      concern        concern        
+interactions   interact       interaction    
+between        between        between        
+computers      computer       computer       
+human          human          human          
+language       language       language       
+used           used           use            
+analyze        analyze        analyze        
+text           text           text           
+allowing       allow          allow          
+machines       machine        machine        
+understand     understand     understand     
+interpret      interpret      interpret      
+manipulate     manipulate     manipulate     
+human          human          human          
+language       language       language       
+nlp            nlp            nlp            
+many           many           many           
+realworld      realworld      realworld      
+applications   applic         application    
+including      includ         include        
+machine        machine        machine        
+translation    transl         translation    
+sentiment      sentiment      sentiment      
+analysis       analysis       analysis       
+chatbots       chatbot        chatbot        
+
+Observations: the stemmer only chops suffixes, so it can produce
+non-words ('applications' -> 'applic', 'including' -> 'includ') and it
+cannot handle irregular forms ('used' stays 'used'). The dictionary
+lemmatizer always returns real words ('applications' -> 'application',
+'used' -> 'use'), but it only knows the words that are in its dictionary.
