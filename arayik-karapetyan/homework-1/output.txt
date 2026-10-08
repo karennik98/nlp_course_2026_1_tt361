@@ -1,0 +1,32 @@
+1. Tokens after tokenization (49 tokens):
+['Natural', 'Language', 'Processing', '(NLP)', 'is', 'a', 'subfield', 'of', 'linguistics,', 'computer', 'science,', 'and', 'artificial', 'intelligence', 'concerned', 'with', 'the', 'interactions', 'between', 'computers', 'and', 'human', 'language.', "It's", 'used', 'to', 'analyze', 'text,', 'allowing', 'machines', 'to', 'understand,', 'interpret,', 'and', 'manipulate', 'human', 'language.', 'NLP', 'has', 'many', 'real-world', 'applications,', 'including', 'machine', 'translation,', 'sentiment', 'analysis,', 'and', 'chatbots.']
+
+2. Tokens after lowercasing and punctuation removal (49 tokens):
+['natural', 'language', 'processing', 'nlp', 'is', 'a', 'subfield', 'of', 'linguistics', 'computer', 'science', 'and', 'artificial', 'intelligence', 'concerned', 'with', 'the', 'interactions', 'between', 'computers', 'and', 'human', 'language', 'its', 'used', 'to', 'analyze', 'text', 'allowing', 'machines', 'to', 'understand', 'interpret', 'and', 'manipulate', 'human', 'language', 'nlp', 'has', 'many', 'realworld', 'applications', 'including', 'machine', 'translation', 'sentiment', 'analysis', 'and', 'chatbots']
+
+3. Tokens after stop word removal (35 tokens):
+['natural', 'language', 'processing', 'nlp', 'subfield', 'linguistics', 'computer', 'science', 'artificial', 'intelligence', 'concerned', 'interactions', 'computers', 'human', 'language', 'used', 'analyze', 'text', 'allowing', 'machines', 'understand', 'interpret', 'manipulate', 'human', 'language', 'nlp', 'many', 'realworld', 'applications', 'including', 'machine', 'translation', 'sentiment', 'analysis', 'chatbots']
+
+4. Tokens after stemming (35 tokens):
+['natural', 'language', 'process', 'nlp', 'subfield', 'linguistic', 'comput', 'science', 'artificial', 'intelligence', 'concern', 'interaction', 'comput', 'human', 'language', 'used', 'analyze', 'text', 'allow', 'machine', 'understand', 'interpret', 'manipulate', 'human', 'language', 'nlp', 'many', 'realworld', 'applic', 'includ', 'machine', 'transl', 'senti', 'analysis', 'chatbot']
+
+Bonus. Tokens after lemmatization (35 tokens):
+['natural', 'language', 'processing', 'nlp', 'subfield', 'linguistics', 'computer', 'science', 'artificial', 'intelligence', 'concern', 'interaction', 'computer', 'human', 'language', 'use', 'analyze', 'text', 'allow', 'machine', 'understand', 'interpret', 'manipulate', 'human', 'language', 'nlp', 'many', 'realworld', 'application', 'include', 'machine', 'translation', 'sentiment', 'analysis', 'chatbot']
+
+Bonus. Stemming vs. lemmatization (words where they differ):
+word           stem           lemma          
+---------------------------------------------
+processing     process        processing     
+linguistics    linguistic     linguistics    
+computer       comput         computer       
+computers      comput         computer       
+used           used           use            
+applications   applic         application    
+including      includ         include        
+translation    transl         translation    
+sentiment      senti          sentiment      
+
+Bonus. Lemmatization of verb forms removed as stop words:
+  is -> lemma: be, stem: is
+  are -> lemma: be, stem: are
+  has -> lemma: have, stem: has
