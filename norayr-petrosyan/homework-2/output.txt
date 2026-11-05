@@ -1,0 +1,36 @@
+support@example.com
+sales@company.org
+john.doe123@university.edu
+
+Valid phone numbers:
+123-456-7890
+987-654-3210
+
+25/12/2023
+01-01-2024
+31/05/2023
+15-10-2024
+
+Repeated words:
+the the
+the the
+
+#Sale2024
+#NewArrival
+#Discounts
+
+Valid passwords:
+Password123
+Secure456
+
+https://www.example.com
+http://blog.example.org
+
+This text has multiple spaces.
+
+Hello, world!
+Hi there!
+
+Valid IP addresses:
+192.168.1.1
+10.0.0.255
