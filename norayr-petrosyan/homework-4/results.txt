@@ -1,0 +1,55 @@
+2225 rows, 2126 distinct articles
+Training: 1700, test: 426, vocabulary: 25301 words
+
+BoW accuracy: 97.42%
+               precision    recall  f1-score   support
+
+     business      0.951     0.960     0.956       101
+entertainment      0.986     0.959     0.973        74
+     politics      1.000     0.975     0.988        81
+        sport      1.000     1.000     1.000       101
+         tech      0.931     0.971     0.950        69
+
+     accuracy                          0.974       426
+    macro avg      0.974     0.973     0.973       426
+ weighted avg      0.975     0.974     0.974       426
+
+
+TF-IDF accuracy: 97.65%
+               precision    recall  f1-score   support
+
+     business      0.970     0.960     0.965       101
+entertainment      0.973     0.986     0.980        74
+     politics      0.987     0.963     0.975        81
+        sport      1.000     1.000     1.000       101
+         tech      0.944     0.971     0.957        69
+
+     accuracy                          0.977       426
+    macro avg      0.975     0.976     0.975       426
+ weighted avg      0.977     0.977     0.977       426
+
+Top 10 words by average TF-IDF in sport training articles
+england          1.834
+game             1.675
+cup              1.486
+chelsea          1.466
+ireland          1.450
+win              1.448
+wales            1.416
+club             1.373
+rugby            1.369
+match            1.366
+
+Example sport article begins: arsenal penalties arsenal win penalties spanish goalkeeper saved alan quinn jon harley
+Repeated words with the lowest IDF
+time             TF=3  IDF=0.969
+good             TF=2  IDF=1.664
+work             TF=2  IDF=1.715
+used             TF=2  IDF=1.775
+half             TF=2  IDF=2.040
+Single-use words with the highest IDF
+partnered        TF=1  IDF=7.438
+arturo           TF=1  IDF=7.438
+pacy             TF=1  IDF=7.438
+tame             TF=1  IDF=7.438
+jeremie          TF=1  IDF=7.438
