@@ -1,4 +1,4 @@
-"""Task 1: extract metadata and preprocess the Coachella tweets."""
+"""Homework 3: extract metadata and preprocess the Coachella tweets."""
 import argparse
 import csv
 import json

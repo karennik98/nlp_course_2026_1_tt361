@@ -1,4 +1,4 @@
-# Homework 1 Coachella text preprocessing
+# Homework 3 - Coachella text preprocessing
 
 Mariam Ghazaryan
 
