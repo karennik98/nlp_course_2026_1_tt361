@@ -1,0 +1,14 @@
+{
+  "source_rows": 2225,
+  "exact_raw_duplicates": 99,
+  "duplicates_removed_after_preprocessing": 106,
+  "unique_documents": 2119,
+  "train_documents": 1695,
+  "test_documents": 424,
+  "vocabulary_size": 25566,
+  "seed": 42,
+  "idf_low_cutoff": 4.43970574626056,
+  "idf_high_cutoff": 7.43543801981455,
+  "test_oov_token_count": 3151,
+  "test_token_count": 90577
+}
