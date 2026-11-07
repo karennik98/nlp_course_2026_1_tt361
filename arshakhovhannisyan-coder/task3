@@ -1,0 +1,58 @@
+import re
+import nltk
+import pandas as pd
+from nltk.corpus import stopwords
+
+nltk.download('punkt')
+nltk.download('stopwords')
+
+stop_words = set(stopwords.words('english'))
+
+def extract_hashtags(text):
+    return re.findall(r"#\w+", text)
+
+def extract_emails(text):
+    return re.findall(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}", text)
+
+def remove_usernames(text):
+    return re.sub(r"@\w+", "", text)
+
+def remove_links(text):
+    return re.sub(r"http\S+|www\S+", "", text)
+
+def remove_non_ascii_symbols(text):
+    return text.encode("ascii", "ignore").decode()
+
+def to_lower(text):
+    return text.lower()
+
+def remove_digits(text):
+    return re.sub(r"\d+", "", text)
+
+def remove_special_characters(text):
+    return re.sub(r"[^\w\s]", "", text)
+
+def remove_stop_words(text):
+    tokens = nltk.word_tokenize(text)
+    filtered = [w for w in tokens if w.lower() not in stop_words]
+    return " ".join(filtered)
+
+def clean_tweet(text):
+    hashtags = extract_hashtags(text)
+    emails = extract_emails(text)
+    text = remove_usernames(text)
+    text = remove_links(text)
+    text = remove_non_ascii_symbols(text)
+    text = to_lower(text)
+    text = remove_digits(text)
+    text = remove_special_characters(text)
+    text = remove_stop_words(text)
+    return {"clean_text": text, "hashtags": hashtags, "emails": emails}
+
+df = pd.read_csv("Coachella-2015-2-DFE (2).csv", encoding="ISO-8859-1")
+df["clean_text"] = df["text"].apply(lambda x: clean_tweet(str(x))["clean_text"])
+df["hashtags"] = df["text"].apply(lambda x: clean_tweet(str(x))["hashtags"])
+df["emails"] = df["text"].apply(lambda x: clean_tweet(str(x))["emails"])
+df.to_csv("Coachella_cleaned.csv", index=False)
+print(df.head())
+
