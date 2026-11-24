@@ -36,11 +36,9 @@ class MarkovModel:
 
             self.vocabulary.update(words)
 
-            # Initial word counts
             self.initial_counts[words[0]] += 1
             self.total_initial += 1
 
-            # First-order transitions
             for i in range(len(words) - 1):
 
                 current_word = words[i]
@@ -216,12 +214,10 @@ def save_results(data, train_data, test_data,
     print("\nResults saved to results.txt")
 
 
-# 5. Main function
 def main():
 
     filename = Path(__file__).parent / "spam.csv"
 
-    # Load dataset
     try:
 
         data = pd.read_csv(
@@ -241,7 +237,6 @@ def main():
         print("File error:", error)
         return
 
-    # Rename dataset columns
     data = data.rename(columns={
         "Category": "label",
         "Message": "message",
@@ -249,13 +244,11 @@ def main():
         "v2": "message"
     })
 
-    # Check required columns
     if not {"label", "message"}.issubset(data.columns):
 
         print("Invalid dataset columns:", data.columns.tolist())
         return
 
-    # Clean dataset
     data = data[["label", "message"]].dropna()
 
     data["label"] = data["label"].str.lower().str.strip()
@@ -278,7 +271,6 @@ def main():
     print("\nClass distribution:")
     print(data["label"].value_counts())
 
-    # Split dataset: 80% train and 20% test
     train_data, test_data = train_test_split(
         data,
         test_size=0.2,
@@ -289,19 +281,16 @@ def main():
     print("\nTraining size:", len(train_data))
     print("Testing size:", len(test_data))
 
-    # Train classifier
     classifier = SpamClassifier()
     classifier.train(train_data)
 
     print("\nTraining completed successfully!")
 
-    # Make predictions
     predictions = [
         classifier.predict(message)
         for message in test_data["message"]
     ]
 
-    # Calculate accuracy
     accuracy = accuracy_score(
         test_data["label"],
         predictions
@@ -309,7 +298,6 @@ def main():
 
     print(f"Accuracy: {accuracy * 100:.2f}%")
 
-    # Save results
     save_results(
         data,
         train_data,
@@ -319,7 +307,6 @@ def main():
         classifier
     )
 
-    # Example predictions
     messages = [
         "Congratulations! You won a free prize!",
         "Hello, how are you?",
@@ -336,7 +323,6 @@ def main():
 
         print(f"{message} --> {prediction}")
 
-    # Interactive classification
     while True:
 
         message = input("\nEnter SMS (or exit): ")
@@ -351,7 +337,6 @@ def main():
 
         print("Prediction:", prediction)
 
-        # Save manual predictions
         results_file = Path(__file__).parent / "results.txt"
 
         with open(results_file, "a", encoding="utf-8") as file:
