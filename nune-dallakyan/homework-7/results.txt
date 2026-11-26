@@ -1,0 +1,60 @@
+HIDDEN MARKOV MODEL
+Student Mood Analysis
+==================================================
+Number of students: 5
+Total observations: 100
+
+1. Initial Probability Distribution
+P(H) = 0.600000
+P(S) = 0.400000
+
+2. Transition Matrix
+From/To       H          S
+H         0.654545   0.345455
+S         0.450000   0.550000
+
+3. Emission Matrix
+Mood          R          G          B
+H         0.719298   0.280702   0.000000
+S         0.000000   0.139535   0.860465
+
+4. Observations: R -> B -> G
+
+5. All Possible Sequences
+
+Sequence: H -> H -> H
+Calculation: 0.600000 * 0.719298 * 0.654545 * 0.000000 * 0.654545 * 0.280702
+Probability: 0.0000000000
+
+Sequence: H -> H -> S
+Calculation: 0.600000 * 0.719298 * 0.654545 * 0.000000 * 0.345455 * 0.139535
+Probability: 0.0000000000
+
+Sequence: H -> S -> H
+Calculation: 0.600000 * 0.719298 * 0.345455 * 0.860465 * 0.450000 * 0.280702
+Probability: 0.0162047402
+
+Sequence: H -> S -> S
+Calculation: 0.600000 * 0.719298 * 0.345455 * 0.860465 * 0.550000 * 0.139535
+Probability: 0.0098453218
+
+Sequence: S -> H -> H
+Calculation: 0.400000 * 0.000000 * 0.450000 * 0.000000 * 0.654545 * 0.280702
+Probability: 0.0000000000
+
+Sequence: S -> H -> S
+Calculation: 0.400000 * 0.000000 * 0.450000 * 0.000000 * 0.345455 * 0.139535
+Probability: 0.0000000000
+
+Sequence: S -> S -> H
+Calculation: 0.400000 * 0.000000 * 0.550000 * 0.860465 * 0.450000 * 0.280702
+Probability: 0.0000000000
+
+Sequence: S -> S -> S
+Calculation: 0.400000 * 0.000000 * 0.550000 * 0.860465 * 0.550000 * 0.139535
+Probability: 0.0000000000
+
+6. Most Likely Mood Sequence
+==================================================
+H -> S -> H
+Maximum probability: 0.0162047402
