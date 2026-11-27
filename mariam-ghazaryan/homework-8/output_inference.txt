@@ -1,0 +1,52 @@
+======================================================================
+LOADED TOPICS
+======================================================================
+0. Sports (Hockey)           max, period, play, power, second, vancouver, motif, mhz
+1. Software & Ethics         know, person, people, problem, windows, like, software, moral
+2. Computers & Software      use, problem, program, want, files, like, disk, time
+3. Religion                  jesus, god, people, think, matthew, know, time, good
+4. Health & Medicine         use, health, father, year, years, son, spirit, state
+5. Space & Science           space, nasa, shuttle, use, windows, like, data, com
+6. Games & Mixed             good, excellent, new, think, missing, know, year, israel
+7. Electronics for Sale      edu, thanks, like, know, mail, card, sale, video
+8. Politics & War            people, armenian, armenians, turkish, government, genocide, soviet, killed
+9. Philosophy & Debate       argument, people, true, believe, like, know, example, think
+
+======================================================================
+SAMPLE DOCUMENT CLASSIFICATION
+======================================================================
+
+--- Sample 1 ---
+Document: The new graphics card delivers amazing performance for gaming. The GPU can handle 4K resolution easi...
+Known words in vocabulary: 10 -> ['new', 'graphics', 'card', 'performance', 'handle', 'resolution', 'easily', 'love', 'frame', 'rates']
+  1. Software & Ethics         42.79%   [know, person, people, problem, windows]
+  2. Electronics for Sale      31.96%   [edu, thanks, like, know, mail]
+  3. Space & Science           21.75%   [space, nasa, shuttle, use, windows]
+
+--- Sample 2 ---
+Document: Scientists discovered a new exoplanet orbiting a distant star in the habitable zone. The research te...
+Known words in vocabulary: 8 -> ['new', 'star', 'research', 'team', 'published', 'nature', 'journal', 'provide']
+  1. Games & Mixed             70.24%   [good, excellent, new, think, missing]
+  2. Politics & War            24.75%   [people, armenian, armenians, turkish, government]
+  3. Computers & Software       0.80%   [use, problem, program, want, files]
+
+--- Sample 3 ---
+Document: The basketball team won the championship after an incredible final game. The players celebrated with...
+Known words in vocabulary: 9 -> ['team', 'won', 'final', 'game', 'players', 'fans', 'team', 'title', 'years']
+  1. Games & Mixed             83.13%   [good, excellent, new, think, missing]
+  2. Electronics for Sale      12.49%   [edu, thanks, like, know, mail]
+  3. Computers & Software       0.71%   [use, problem, program, want, files]
+
+--- Sample 4 ---
+Document: Congress passed a new bill regarding healthcare reform. The president is expected to sign the legisl...
+Known words in vocabulary: 12 -> ['congress', 'passed', 'new', 'president', 'expected', 'sign', 'week', 'policy', 'affect', 'millions', 'citizens', 'country']
+  1. Politics & War            73.92%   [people, armenian, armenians, turkish, government]
+  2. Philosophy & Debate       13.82%   [argument, people, true, believe, like]
+  3. Software & Ethics          9.30%   [know, person, people, problem, windows]
+
+--- Sample 5 ---
+Document: I love cooking Italian food at home. Pasta carbonara and margherita pizza are my favorite dishes to ...
+Known words in vocabulary: 5 -> ['love', 'food', 'home', 'favorite', 'difference']
+  1. Health & Medicine         47.89%   [use, health, father, year, years]
+  2. Philosophy & Debate       44.79%   [argument, people, true, believe, like]
+  3. Computers & Software       1.23%   [use, problem, program, want, files]

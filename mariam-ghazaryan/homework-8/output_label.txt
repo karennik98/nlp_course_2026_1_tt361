@@ -1,0 +1,266 @@
+
+======================================================================
+Topic 0 - top 20 words
+======================================================================
+  max                  0.1464
+  period               0.0216
+  play                 0.0163
+  power                0.0143
+  second               0.0081
+  vancouver            0.0081
+  motif                0.0073
+  mhz                  0.0065
+  louis                0.0065
+  scoring              0.0065
+  chicago              0.0065
+  like                 0.0063
+  pittsburgh           0.0062
+  detroit              0.0060
+  type                 0.0056
+  jose                 0.0055
+  san                  0.0053
+  los                  0.0053
+  time                 0.0052
+  scope                0.0049
+
+Name for Topic 0 (Enter to keep default): 
+======================================================================
+Topic 1 - top 20 words
+======================================================================
+  know                 0.0147
+  person               0.0079
+  people               0.0073
+  problem              0.0073
+  windows              0.0069
+  like                 0.0061
+  software             0.0059
+  moral                0.0058
+  question             0.0057
+  yes                  0.0057
+  code                 0.0055
+  source               0.0051
+  known                0.0051
+  wrong                0.0049
+  cable                0.0047
+  matter               0.0046
+  way                  0.0045
+  want                 0.0045
+  self                 0.0045
+  control              0.0043
+
+Name for Topic 1 (Enter to keep default): 
+======================================================================
+Topic 2 - top 20 words
+======================================================================
+  use                  0.0119
+  problem              0.0090
+  program              0.0082
+  want                 0.0075
+  files                0.0072
+  like                 0.0069
+  disk                 0.0068
+  time                 0.0067
+  thanks               0.0065
+  need                 0.0063
+  windows              0.0062
+  file                 0.0062
+  help                 0.0058
+  know                 0.0056
+  image                0.0055
+  work                 0.0053
+  machine              0.0053
+  memory               0.0051
+  simms                0.0048
+  software             0.0047
+
+Name for Topic 2 (Enter to keep default): 
+======================================================================
+Topic 3 - top 20 words
+======================================================================
+  jesus                0.0285
+  god                  0.0163
+  people               0.0114
+  think                0.0114
+  matthew              0.0097
+  know                 0.0087
+  time                 0.0080
+  good                 0.0071
+  man                  0.0067
+  things               0.0066
+  christian            0.0059
+  said                 0.0058
+  says                 0.0054
+  day                  0.0050
+  david                0.0049
+  sin                  0.0047
+  king                 0.0047
+  want                 0.0045
+  little               0.0045
+  like                 0.0045
+
+Name for Topic 3 (Enter to keep default): 
+======================================================================
+Topic 4 - top 20 words
+======================================================================
+  use                  0.0134
+  health               0.0130
+  father               0.0104
+  year                 0.0077
+  years                0.0074
+  son                  0.0073
+  spirit               0.0062
+  state                0.0060
+  car                  0.0058
+  medical              0.0057
+  number               0.0053
+  insurance            0.0050
+  case                 0.0049
+  users                0.0047
+  holy                 0.0046
+  university           0.0045
+  know                 0.0045
+  edu                  0.0043
+  age                  0.0043
+  reported             0.0041
+
+Name for Topic 4 (Enter to keep default): 
+======================================================================
+Topic 5 - top 20 words
+======================================================================
+  space                0.0143
+  nasa                 0.0108
+  shuttle              0.0085
+  use                  0.0080
+  windows              0.0079
+  like                 0.0069
+  data                 0.0067
+  com                  0.0066
+  scsi                 0.0062
+  chip                 0.0060
+  new                  0.0054
+  mission              0.0050
+  launch               0.0049
+  orbit                0.0048
+  earth                0.0046
+  systems              0.0044
+  bit                  0.0044
+  program              0.0044
+  applications         0.0039
+  power                0.0039
+
+Name for Topic 5 (Enter to keep default): 
+======================================================================
+Topic 6 - top 20 words
+======================================================================
+  good                 0.0232
+  excellent            0.0108
+  new                  0.0102
+  think                0.0090
+  missing              0.0081
+  know                 0.0071
+  year                 0.0067
+  israel               0.0067
+  like                 0.0064
+  cover                0.0063
+  games                0.0059
+  time                 0.0057
+  fair                 0.0057
+  issue                0.0056
+  land                 0.0055
+  great                0.0051
+  people               0.0051
+  players              0.0051
+  palestinians         0.0049
+  game                 0.0047
+
+Name for Topic 6 (Enter to keep default): 
+======================================================================
+Topic 7 - top 20 words
+======================================================================
+  edu                  0.0123
+  thanks               0.0109
+  like                 0.0093
+  know                 0.0080
+  mail                 0.0077
+  card                 0.0070
+  sale                 0.0068
+  video                0.0068
+  people               0.0063
+  time                 0.0062
+  let                  0.0060
+  info                 0.0058
+  bit                  0.0058
+  interested           0.0052
+  version              0.0052
+  dos                  0.0050
+  information          0.0048
+  offer                0.0046
+  lot                  0.0046
+  group                0.0045
+
+Name for Topic 7 (Enter to keep default): 
+======================================================================
+Topic 8 - top 20 words
+======================================================================
+  people               0.0171
+  armenian             0.0160
+  armenians            0.0134
+  turkish              0.0115
+  government           0.0095
+  genocide             0.0086
+  soviet               0.0065
+  killed               0.0064
+  said                 0.0062
+  russian              0.0052
+  war                  0.0050
+  turks                0.0050
+  greek                0.0048
+  muslim               0.0045
+  world                0.0044
+  left                 0.0043
+  time                 0.0042
+  radius               0.0042
+  children             0.0040
+  population           0.0039
+
+Name for Topic 8 (Enter to keep default): 
+======================================================================
+Topic 9 - top 20 words
+======================================================================
+  argument             0.0100
+  people               0.0087
+  true                 0.0077
+  believe              0.0076
+  like                 0.0069
+  know                 0.0066
+  example              0.0062
+  think                0.0062
+  way                  0.0058
+  said                 0.0055
+  god                  0.0054
+  good                 0.0051
+  truth                0.0049
+  conclusion           0.0046
+  better               0.0045
+  bible                0.0044
+  things               0.0043
+  course               0.0041
+  time                 0.0039
+  gun                  0.0039
+
+Name for Topic 9 (Enter to keep default): 
+Labels saved to models/topic_labels.json
+
+======================================================================
+SUMMARY
+======================================================================
+Topic 0: Sports (Hockey)           [max, period, play, power, second]
+Topic 1: Software & Ethics         [know, person, people, problem, windows]
+Topic 2: Computers & Software      [use, problem, program, want, files]
+Topic 3: Religion                  [jesus, god, people, think, matthew]
+Topic 4: Health & Medicine         [use, health, father, year, years]
+Topic 5: Space & Science           [space, nasa, shuttle, use, windows]
+Topic 6: Games & Mixed             [good, excellent, new, think, missing]
+Topic 7: Electronics for Sale      [edu, thanks, like, know, mail]
+Topic 8: Politics & War            [people, armenian, armenians, turkish, government]
+Topic 9: Philosophy & Debate       [argument, people, true, believe, like]
