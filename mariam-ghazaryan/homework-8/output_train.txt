@@ -1,0 +1,21 @@
+Loading 20 Newsgroups dataset...
+Using 1000 documents
+Preprocessing...
+Vocabulary before filtering: 18376
+Vocabulary after filtering:  2544
+Training LDA (10 topics, 15 passes)...
+Model and dictionary saved to 'models/'
+
+======================================================================
+DISCOVERED TOPICS (top 15 words)
+======================================================================
+Topic 0: max, period, play, power, second, vancouver, motif, mhz, louis, scoring, chicago, like, pittsburgh, detroit, type
+Topic 1: know, person, people, problem, windows, like, software, moral, question, yes, code, source, known, wrong, cable
+Topic 2: use, problem, program, want, files, like, disk, time, thanks, need, windows, file, help, know, image
+Topic 3: jesus, god, people, think, matthew, know, time, good, man, things, christian, said, says, day, david
+Topic 4: use, health, father, year, years, son, spirit, state, car, medical, number, insurance, case, users, holy
+Topic 5: space, nasa, shuttle, use, windows, like, data, com, scsi, chip, new, mission, launch, orbit, earth
+Topic 6: good, excellent, new, think, missing, know, year, israel, like, cover, games, time, fair, issue, land
+Topic 7: edu, thanks, like, know, mail, card, sale, video, people, time, let, info, bit, interested, version
+Topic 8: people, armenian, armenians, turkish, government, genocide, soviet, killed, said, russian, war, turks, greek, muslim, world
+Topic 9: argument, people, true, believe, like, know, example, think, way, said, god, good, truth, conclusion, better
